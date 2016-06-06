@@ -18,7 +18,7 @@ require 'yaml'
 }
 
 #Load secrets from yaml file & set data values to use
-data = YALM::load( File.open( 'config/secrets.yml' ) )
+data = YAML::load( File.open( 'config/secrets.yml' ) )
 SECURE_URL_BASE = data['url_base']
 API_DOMAIN = data['api_domain']
 
